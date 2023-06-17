@@ -5,31 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Baking 🧁</title>
+    <style>
+      body {
+        background: lightpink;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid lightcoral;
+        border-radius: 10px;
+        background: whitesmoke;
+        font-size: 18px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background: rgb(193, 243, 247);
+        cursor: pointer;
+      }
+      footer {
+        text-align: center;
+        margin: 20px auto;
+      }
+      .container {
+        margin: 20px auto;
+        max-width: 800px;
+        background-color: antiquewhite;
+        border-radius: 15px;
+        padding: 25px;
+      }
+      .theme-button {
+        font-size: 12px;
+        background: black;
+        color: antiquewhite;
+      }
+      .theme-button:hover {
+        color: black;
+        background: antiquewhite;
+      }
+    </style>
   </head>
   <body>
-    <button>Dark theme</button>
-    <h1>Baking</h1>
-    <h2>My favorite hobby</h2>
-    <img
-      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/169/original/rose_cake.jpg?1687039932"
-      alt=""
-    />
-    <img
-      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/167/original/donut.jpg?1687039724"
-      alt=""
-    />
-    <img
-      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/166/original/baking_tools.jpeg?1687039621"
-      alt=""
-    />
-    <p>
-      Cake is a flour confection made from flour, sugar, and other ingredients,
-      and is usually baked. In their oldest forms, cakes were modifications of
-      bread, but cakes now cover a wide range of preparations that can be simple
-      or elaborate, and which share features with desserts such as pastries,
-      meringues, custards, and pies.
-    </p>
-    <button>Book your baking session here</button>
+    <button class="theme-button">Dark theme</button>
+    <div class="container">
+      <h1>Baking</h1>
+      <h2>My favorite hobby</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/169/original/rose_cake.jpg?1687039932"
+        alt=""
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/167/original/donut.jpg?1687039724"
+        alt=""
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/166/original/baking_tools.jpeg?1687039621"
+        alt=""
+      />
+      <p>
+        Cake is a flour confection made from flour, sugar, and other
+        ingredients, and is usually baked. In their oldest forms, cakes were
+        modifications of bread, but cakes now cover a wide range of preparations
+        that can be simple or elaborate, and which share features with desserts
+        such as pastries, meringues, custards, and pies.
+      </p>
+      <div>
+        <a href="https://en.wikipedia.org/wiki/Cake" target="_blank"
+          >Read on Wikipedia 📖</a
+        >
+      </div>
+      <button>Book your baking session here</button>
+    </div>
     <footer>
       This project was coded by
       <a
@@ -41,7 +96,7 @@
       <a
         href="https://github.com/Aliciaasmbc/basics-add-on-project"
         target="_blank"
-        >open sourced on GitHub</a
+        >Open-sourced on GitHub</a
       >
     </footer>
   </body>
