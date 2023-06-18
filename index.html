@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Baking 🧁</title>
+    <title>🧁 Baking 🧁</title>
     <style>
       body {
-        background: lightpink;
+        background: radial-gradient(
+          410px at 49.5% 99%,
+          rgb(250, 208, 196) 0%,
+          rgb(255, 209, 255) 99.5%
+        );
       }
       h1 {
         text-align: center;
@@ -21,7 +25,7 @@
       button {
         display: block;
         margin: 0 auto;
-        border: 1px solid lightcoral;
+        border: 1px solid #ff6bd6;
         border-radius: 10px;
         background: whitesmoke;
         font-size: 18px;
@@ -34,8 +38,9 @@
         line-height: 1.5;
       }
       button:hover {
-        background: rgb(193, 243, 247);
+        background: #1b335f;
         cursor: pointer;
+        color: whitesmoke;
       }
       footer {
         text-align: center;
@@ -44,18 +49,19 @@
       .container {
         margin: 20px auto;
         max-width: 800px;
-        background-color: antiquewhite;
+        background-color: #ffecd3;
         border-radius: 15px;
         padding: 25px;
       }
       .theme-button {
         font-size: 12px;
-        background: black;
-        color: antiquewhite;
+        background: #1b335f;
+        color: #ffecd3;
+        border: none;
       }
       .theme-button:hover {
-        color: black;
-        background: antiquewhite;
+        color: #1b335f;
+        background: #ffecd3;
       }
       .grid {
         display: grid;
@@ -83,7 +89,11 @@
         transform: scale(1.1);
       }
       .dark {
-        background-color: black;
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(0, 0, 0) 0%,
+          rgb(64, 64, 64) 90.2%
+        );
         color: whitesmoke;
       }
       .dark .container {
