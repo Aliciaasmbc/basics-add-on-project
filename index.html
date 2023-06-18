@@ -133,7 +133,7 @@
           >Read on Wikipedia 📖</a
         >
       </div>
-      <button>Book your baking session here</button>
+      <button class="book-button">Book your baking session here</button>
     </div>
     <footer>
       This project was coded by
@@ -162,8 +162,25 @@
         //}
       }
 
+      function bakingSession() {
+        let age = prompt("how old are you ?");
+        if (age < 18) {
+          alert("Please ask an adult to book for you");
+        } else {
+          alert("Thank you, now we need a bit more information about you.");
+        }
+        let name = prompt("What's your name?");
+        let email = prompt("What's your email?");
+        alert(
+          `Thank you ${name}! We will let you know when future sessions are available.`
+        );
+      }
+
       let themeButton = document.querySelector(".theme-button");
       themeButton.addEventListener("click", makeItDark);
+
+      let Button = document.querySelector(".book-button");
+      Button.addEventListener("click", bakingSession);
     </script>
   </body>
 </html>
