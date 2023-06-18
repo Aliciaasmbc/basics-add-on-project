@@ -52,6 +52,15 @@
         color: black;
         background: antiquewhite;
       }
+
+      .cake-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .cake-picture:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
     </style>
   </head>
   <body>
@@ -59,9 +68,11 @@
     <div class="container">
       <h1>Baking</h1>
       <h2>My favorite hobby</h2>
+      <a href="https://en.wikipedia.org/wiki/Cake" target="_blank"></a>
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/169/original/rose_cake.jpg?1687039932"
         alt=""
+        class="cake-picture"
       />
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/167/original/donut.jpg?1687039724"
