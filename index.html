@@ -82,10 +82,20 @@
         filter: contrast(50%);
         transform: scale(1.1);
       }
+      .dark {
+        background-color: black;
+        color: whitesmoke;
+      }
+      .dark .container {
+        background: rgb(255, 255, 255, 0.1);
+      }
+      .dark a {
+        color: plum;
+      }
     </style>
   </head>
   <body>
-    <button class="theme-button">Dark theme</button>
+    <button class="theme-button">Change theme</button>
     <div class="container">
       <h1>Baking</h1>
       <h2>My favorite hobby</h2>
@@ -139,5 +149,21 @@
         >Open-sourced on GitHub</a
       >
     </footer>
+    <script>
+      function makeItDark() {
+        let body = document.querySelector("body");
+
+        body.classList.toggle("dark");
+
+        //if (body.classList.contains("dark")) {
+        // body.classList.remove("dark");
+        //} else {
+        //body.classList.add("dark");
+        //}
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", makeItDark);
+    </script>
   </body>
 </html>
